@@ -1,0 +1,164 @@
+/*------------------------------------*\
+    #Carrers
+\*------------------------------------*/
+.careers {
+    padding-top   : 125px;
+    padding-bottom: 110px;
+
+    @media #{$maxTablet} {
+        padding-top   : 65px;
+        padding-bottom: 70px;
+    }
+
+    .career-item {
+        border-radius   : 4px;
+        box-shadow      : 0px 5px 83px 0px rgba(3, 43, 86, 0.1);
+        background-color: var(--global--color-white);
+        padding         : 40px 40px 40px;
+        position        : relative;
+        transition      : 0.3s ease-in-out;
+
+        @media #{$noteBook} {
+            padding-right: 25px;
+            padding-left : 25px;
+        }
+
+        @media #{$maxSmall} {
+            padding-right: 25px;
+            padding-left : 25px;
+        }
+
+        @media #{$maxTablet} {
+            max-width: 370px;
+            margin   : 0 auto;
+        }
+
+        &::after {
+            content         : '';
+            position        : absolute;
+            right           : 0px;
+            bottom          : 0;
+            width           : calc(100% - 40px);
+            height          : 6px;
+            background-color: var(--global--color-secondary);
+            transition      : 0.3s ease-in-out;
+            border-radius   : 0 0 4px 0;
+
+            @media #{$noteBook} {
+                width: calc(100% - 25px);
+            }
+
+            @media #{$maxSmall} {
+                width: calc(100% - 25px);
+            }
+        }
+
+        &:hover {
+            box-shadow: 0px 5px 83px 0px rgba(3, 43, 86, 0.12);
+
+            .career-content {
+                .career-more {
+                    color           : var(--global--color-white);
+                    background-color: var(--global--color-secondary);
+                    border-color    : var(--global--color-secondary);
+                    box-shadow      : 0px 3px 63px 0px rgba(6, 52, 100, 0.11);
+                }
+            }
+        }
+
+        .career-meta {
+            display      : flex;
+            align-items  : center;
+            margin-bottom: 33px;
+
+            .career-type,
+            .career-place {
+                font-size     : 13px;
+                line-height   : 28px;
+                font-family   : var(--global--font-body);
+                font-weight   : 400;
+                text-transform: capitalize;
+                margin-bottom : 0;
+            }
+
+            .career-type {
+                position        : relative;
+                display         : flex;
+                align-items     : center;
+                justify-content : center;
+                padding         : 0 10px;
+                height          : 30px;
+                border-radius   : 4px 4px 4px 0;
+                background-color: var(--global--color-primary-alt);
+                margin-right    : 15px;
+                font-family     : var(--global--font-body);
+                font-weight     : 400;
+                font-size       : 13px;
+                color           : var(--global--color-white);
+                text-transform  : capitalize;
+
+                &::before {
+                    content         : '';
+                    width           : 9px;
+                    height          : 7px;
+                    position        : absolute;
+                    top             : 100%;
+                    left            : 0;
+                    background-color: var(--global--color-primary-alt);
+                    clip-path       : polygon(100% 0, 0 0, 0 100%);
+                }
+            }
+
+            .career-place {
+                color: #1e4873;
+            }
+        }
+
+        .career-content {
+            .career-title {
+                font-family   : var(--global--font-heading);
+                font-size     : 20px;
+                font-weight   : 500;
+                line-height   : 28px;
+                color         : var(--global--color-heading);
+                margin-bottom : 17px;
+                text-transform: capitalize;
+            }
+
+            .career-desc {
+                font-family  : var(--global--font-body);
+                font-weight  : 400;
+                font-size    : 15px;
+                line-height  : 25px;
+                color        : var(--global--color-body);
+                margin-bottom: 32px;
+            }
+
+            .career-more {
+                width  : 130px;
+                height : 50px;
+                padding: 0 18px;
+            }
+        }
+    }
+
+    .carousel-dots {
+        .owl-stage-outer {
+            overflow: visible;
+
+            .owl-item {
+                opacity   : 0;
+                visibility: hidden;
+
+                &.active {
+                    opacity   : 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        .owl-dots {
+            margin-top: 40px;
+        }
+    }
+}

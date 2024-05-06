@@ -1,0 +1,203 @@
+/*------------------------------------*\
+    #Processes
+\*------------------------------------*/
+.processes {
+    padding-top   : 125px;
+    padding-bottom: 0;
+
+    @media #{$maxTablet} {
+        padding-top: 65px;
+    }
+
+    .process-panel {
+        padding         : 50px 30px 50px;
+        position        : relative;
+        transition      : 0.3s ease-in-out;
+        border-radius   : 4px;
+        background-color: var(--global-color-white);
+
+        @media #{$maxTablet} {
+            max-width: 370px;
+            margin   : 0 auto 10px;
+        }
+
+        @media #{$noteBook} {
+            padding-left : 15px;
+            padding-right: 15px;
+        }
+
+        &:hover {
+            background-color: #eef3f8;
+
+            .panel-shape {
+                opacity   : 0;
+                visibility: hidden;
+                transition: 0.3s ease-in-out;
+            }
+
+            .process-body {
+                .process-content {
+                    a {
+                        color           : var(--global--color-white);
+                        background-color: var(--global--color-secondary);
+                        border-color    : var(--global--color-secondary);
+                        box-shadow      : 0px 3px 63px 0px rgba(6, 52, 100, 0.11);
+                    }
+                }
+            }
+        }
+
+        .panel-shape {
+            position : absolute;
+            top      : 10px;
+            left     : 50%;
+            transform: translateX(-50%);
+            max-width: 100%;
+            z-index  : 0;
+        }
+
+        .process-number {
+            position   : absolute;
+            top        : 21px;
+            left       : 30px;
+            font-family: var(--global--font-body);
+            font-size  : 60px;
+            font-weight: 300;
+            line-height: 1;
+            font-style : italic;
+            color      : #cdd6e0;
+            z-index    : 2;
+        }
+
+        .process-body {
+            position      : relative;
+            z-index       : 2;
+            display       : flex;
+            flex-direction: column;
+            align-items   : center;
+            text-align    : center;
+
+            .process-icon {
+                margin-bottom: 24px;
+
+                i {
+                    display   : flex;
+                    font-size : 55px;
+                    transition: 0.3s ease-in-out;
+                    color     : #1d65b9;
+                }
+            }
+
+            .process-content {
+                h3 {
+                    font-family   : var(--global--font-heading);
+                    font-weight   : 500;
+                    font-size     : 18px;
+                    color         : #1e4873;
+                    line-height   : 27px;
+                    margin-bottom : 16px;
+                    text-transform: capitalize;
+
+                    @media #{$minXlarge} {
+                        padding: 0 15px;
+                    }
+                }
+
+                p {
+                    font-size    : 15px;
+                    line-height  : 25px;
+                    margin-bottom: 22px;
+                }
+
+                a {
+                    display: inline-flex;
+                    width  : 130px;
+                    height : 50px;
+                    padding: 0 18px;
+                }
+            }
+        }
+    }
+
+    .processes-holder {
+        padding-bottom: 60px;
+        border-bottom : 2px solid #e6eaef;
+
+        @media #{$maxTablet} {
+            padding-bottom: 30px;
+        }
+    }
+
+    &.processes-2 {
+        padding-top: 190px;
+
+        @media #{$maxTablet} {
+            padding-top: 140px;
+        }
+    }
+
+    &.processes-3 {
+        .process-panel {
+            &:hover {
+                background-color: var(--global--color-white);
+            }
+        }
+    }
+}
+
+.processes-note {
+    position      : relative;
+    text-align    : center;
+    padding-top   : 53px;
+    padding-bottom: 52px;
+
+    p {
+        font-family  : var(--global--font-body);
+        font-weight  : 700;
+        font-size    : 14px;
+        line-height  : 25px;
+        color        : var(--global--color-body);
+        margin-bottom: 0;
+        position     : relative;
+        z-index      : 2;
+
+        a {
+            color         : var(--global--color-heading);
+            text-transform: capitalize;
+
+            &:hover {
+                i {
+                    transform: translateX(5px);
+                }
+            }
+
+            i {
+                display    : inline-block;
+                transition : 0.3s ease-in-out;
+                color      : var(--global--color-primary);
+                font-size  : 10px;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .note-bg {
+        position : absolute;
+        left     : -44px;
+        top      : 50%;
+        transform: translateY(-50%);
+
+        @media #{$maxTablet} {
+            left: -20px;
+        }
+
+        @media #{$maxSmall} {
+            display: none;
+        }
+
+        i {
+            font-size: 85px;
+            color    : #dde8f5;
+        }
+    }
+}

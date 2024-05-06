@@ -1,0 +1,256 @@
+/*--------------------------------
+    #Pricing
+---------------------------------*/
+.pricing {
+    padding-top   : 125px;
+    padding-bottom: 0;
+
+    @media #{$maxTablet} {
+        padding-top   : 65px;
+        padding-bottom: 40px;
+    }
+
+    .pricing-table {
+        display       : flex;
+        flex-direction: column;
+
+        @media #{$maxTablet} {
+            max-width: 370px;
+            margin   : 0 auto 40px;
+        }
+
+        .pricing-panel {
+            background-color: var(--global--color-white);
+            padding         : 53px 50px 50px;
+            box-shadow      : 0px 5px 83px 0px rgba(6, 52, 100, 0.1);
+            display         : flex;
+            flex-direction  : column;
+            justify-content : space-between;
+            flex-grow       : 1;
+            border-radius   : 4px;
+            position        : relative;
+
+            @media #{$maxTablet} {
+                text-align: center;
+            }
+
+            @media #{$noteBook} {
+                padding-left : 25px;
+                padding-right: 25px;
+            }
+
+            @media #{$maxSmall} {
+                padding-left : 25px;
+                padding-right: 25px;
+            }
+
+            &::after {
+                content         : '';
+                position        : absolute;
+                top             : 0;
+                left            : 0;
+                height          : 6px;
+                width           : calc(100% - 50px);
+                background-color: var(--global--color-primary-alt);
+                border-radius   : 4px 0 0px 0;
+
+                @media #{$noteBook} {
+                    width: calc(100% - 25px);
+                }
+
+                @media #{$maxSmall} {
+                    width: calc(100% - 25px);
+                }
+            }
+
+            &.alternative {
+                &::after {
+                    background-color: var(--global--color-primary-alt);
+                }
+
+                .pricing-body {
+                    .pricing-list {
+                        li {
+                            i {
+                                background-color: var(--global--color-primary-alt);
+                            }
+                        }
+                    }
+                }
+
+                .pricing-price {
+                    .btn {
+                        background-color: var(--global--color-primary-alt);
+                    }
+                }
+            }
+
+            &.secondary {
+                &::after {
+                    background-color: var(--global--color-secondary);
+                }
+
+                .pricing-body {
+                    .pricing-list {
+                        li {
+                            i {
+                                background-color: var(--global--color-secondary);
+                            }
+                        }
+                    }
+                }
+
+                .pricing-price {
+                    .btn {
+                        background-color: var(--global--color-secondary);
+                    }
+                }
+            }
+
+            &.primary {
+                &::after {
+                    background-color: var(--global--color-primary);
+                }
+
+                .pricing-body {
+                    .pricing-list {
+                        li {
+                            i {
+                                background-color: var(--global--color-primary);
+                            }
+                        }
+                    }
+                }
+
+                .pricing-price {
+                    .btn {
+                        background-color: var(--global--color-primary);
+                    }
+                }
+            }
+
+            .pricing-body {
+                .pricing-heading {
+                    margin-bottom: 24px;
+
+                    .pricing-title {
+                        font-family   : var(--global--font-heading);
+                        font-size     : 24px;
+                        font-weight   : 700px;
+                        line-height   : 32px;
+                        color         : #05213f;
+                        margin-bottom : 16px;
+                        position      : relative;
+                        text-transform: capitalize;
+                        transition    : 300ms ease-in-out;
+                    }
+
+                    .pricing-desc {
+                        font-family  : var(--global--font-body);
+                        font-size    : 17px;
+                        font-weight  : 400;
+                        color        : var(--global--color-body);
+                        line-height  : 27px;
+                        margin-bottom: 0px;
+                    }
+                }
+
+                .pricing-list {
+                    margin-bottom: 73px;
+
+                    li {
+                        font-family  : var(--global--font-body);
+                        font-size    : 15px;
+                        font-weight  : 700;
+                        line-height  : 35px;
+                        margin-bottom: 0px;
+                        color        : var(--global--color-body);
+                        display      : flex;
+                        align-items  : center;
+
+                        i {
+                            display         : inline-flex;
+                            align-items     : center;
+                            justify-content : center;
+                            width           : 20px;
+                            height          : 20px;
+                            border-radius   : 50%;
+                            background-color: var(--global--color-primary-alt);
+                            color           : var(--global--color-white);
+                            font-size       : 10px;
+                            margin-right    : 15px;
+                        }
+                    }
+                }
+            }
+
+            .pricing-price {
+                p {
+                    margin-bottom: 0;
+                    font-family  : var(--global--font-heading);
+                    font-weight  : 400;
+                    color        : #1e4873;
+                    display      : flex;
+                    align-items  : baseline;
+                    line-height  : 30px;
+                    position     : relative;
+
+                    @media #{$maxTablet} {
+                        justify-content: center;
+                    }
+
+                    span {
+                        &::before {
+                            content: '/';
+                        }
+
+                        &:first-of-type {
+                            &::before {
+                                content: unset;
+                            }
+                        }
+                    }
+
+                    .currency {
+                        font-size: 50px;
+                    }
+
+                    .time {
+                        font-weight: 700;
+                        font-size  : 14px;
+                    }
+                }
+
+                .btn {
+                    background-color: var(--global--color-primary-alt);
+                    height          : 65px;
+                    justify-content : space-between;
+                    margin-bottom   : 44px;
+
+                    i {
+                        font-size: 10px;
+                    }
+
+                    &::before {
+                        background-color: var(--global--color-heading);
+                    }
+                }
+            }
+        }
+    }
+
+    .processes-note {
+        @media #{$maxTablet} {
+            padding-top   : 23px;
+            padding-bottom: 22px;
+        }
+    }
+}
+
+.pricing-request {
+    padding: 110px 0;
+
+    @media #{$maxTablet} {
+        padding: 70px 0;
+    }
+}

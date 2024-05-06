@@ -1,0 +1,111 @@
+/*------------------------------------*\
+    #Client
+\*------------------------------------*/
+
+.clients {
+    padding-top   : 0;
+    padding-bottom: 0;
+    border-bottom : 2px solid #e6eaef;
+    overflow      : visible;
+
+    @media #{$maxTablet} {
+        padding-top: 40px;
+    }
+
+    .clients-note {
+        text-align: center;
+
+        @media #{$minLarge} {
+            max-width: 80%;
+            margin   : 0 auto;
+            transform: translateY(24px);
+        }
+
+        @media #{$noteBook} {
+            max-width: 100%;
+        }
+
+        @media #{$maxTablet} {
+            margin   : 0 auto;
+            max-width: 80%;
+        }
+
+        @media #{$maxSmall} {
+            max-width: 100%;
+        }
+
+        p {
+            font-family  : var(--global--font-body);
+            font-weight  : 700;
+            font-size    : 14px;
+            color        : var(--global--color-body);
+            line-height  : 33px;
+            margin-bottom: 0;
+
+            a {
+                position      : relative;
+                font-weight   : 700;
+                color         : var(--global--color-heading);
+                transition    : 0.3s ease-in-out;
+                text-transform: capitalize;
+                padding-bottom: 6px;
+
+                &:hover {
+                    &::before {
+                        width: calc(100% - 20%);
+                    }
+                }
+
+                &::before {
+                    content         : '';
+                    transition      : 0.3s ease-in-out;
+                    position        : absolute;
+                    bottom          : 0;
+                    left            : 50%;
+                    transform       : translateX(-50%);
+                    width           : 100%;
+                    height          : 2px;
+                    background-color: var(--global--color-primary);
+                }
+            }
+        }
+    }
+
+    .client {
+        padding-top   : 49px;
+        padding-bottom: 49px;
+        cursor        : pointer;
+        transition    : 0.3s ease;
+        width         : 150px;
+        margin-right  : auto;
+        margin-left   : auto;
+        position      : relative;
+        opacity       : 0.5;
+
+        @media #{$noteBook} {
+            width: 130px;
+        }
+
+        &:hover {
+            opacity: 1;
+        }
+
+        a {
+            position: absolute;
+            width   : 100%;
+            height  : 100%;
+            top     : 0;
+            left    : 0;
+            right   : 0;
+            z-index : 2;
+        }
+
+        img {
+            max-width   : 100%;
+            width       : auto;
+            display     : block;
+            margin-right: auto;
+            margin-left : auto;
+        }
+    }
+}

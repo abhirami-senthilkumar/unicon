@@ -1,0 +1,85 @@
+/*------------------------------------*\
+    #Accordion
+\*------------------------------------*/
+/* Accordion Base */
+.accordion {
+
+    .card,
+    .card:first-of-type,
+    .card:not(:first-of-type):not(:last-of-type) {
+        padding      : 25px 25px 18px 30px;
+        box-shadow   : none;
+        border       : 2px solid #cdd6e0;
+        margin-bottom: 0px;
+        border-radius: 0px;
+        transition   : 0.3s ease-in-out;
+        text-align   : left;
+        border-radius: 4px;
+        margin-bottom: 30px;
+
+        &.active-acc {
+            border-color: var(--global--color-secondary);
+
+            .card-heading {
+                .card-link {
+                    color: var(--global--color-secondary);
+                }
+            }
+        }
+
+        .card-heading {
+            padding-bottom: 4px;
+
+            .card-link {
+                font-family    : var(--global--font-heading);
+                font-size      : 18px;
+                font-weight    : 500;
+                color          : #1e4873;
+                text-transform : capitalize;
+                position       : relative;
+                transition     : 0.3s ease-in-out;
+                display        : flex;
+                align-items    : center;
+                justify-content: space-between;
+                padding-left   : 0;
+
+                &:hover {
+                    color: #1e4873;
+                }
+
+                &::after {
+                    /* symbol for "opening" cards */
+                    content    : "\f068";
+                    flex-shrink: 0;
+                    @include centerd(20px, 20px, var(--global--color-secondary));
+                    border-radius   : 50%;
+                    transition      : 0.3s ease-in-out;
+                    font-family     : "Font Awesome 5 Free";
+                    font-weight     : 700;
+                    font-size       : 11px;
+                    margin-left     : 10px;
+                    color           : var(--global--color-white);
+                    background-color: var(--global--color-secondary);
+                }
+
+                &.collapsed {
+                    &::after {
+                        /* symbol for "collapsed" cards */
+                        content         : "\f067";
+                        color           : #1e4873;
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+
+        .card-body {
+            font-family: var(--global--font-body);
+            color      : var(--global--color-body);
+            padding    : 7px 0 5px 0px;
+            font-size  : 15px;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+}

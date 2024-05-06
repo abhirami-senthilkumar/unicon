@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    #CSS VARIBALES
+\*------------------------------------*/
+:root {
+	--global--color-primary       : #44d6fe;
+	--global--color-primary-alt       : #9bcb3b;
+	--global--color-primary-darken: #263967;
+	--global--color-primary-light : #e6f8fb;
+	--global--color-secondary     : #1d65b9;
+	--global--color-heading       : #063464;
+	--global--color-heading-darken: #435ba1;
+	--global--color-heading-light : #1d2a4d;
+	--global--color-body          : #8e949e;
+	--global--color-white         : #ffffff;
+	--global--color-border          : #e6eaef;
+	--global--color-gray          : #f9f9f9;
+	--global--color-gray-darken   : #9aaabb;
+	--global--color-gray-light    : #e6e8eb;
+	--global--font-body           : 'Roboto', sans-serif;
+	--global--font-heading        : 'Rubik', sans-serif;
+	--global--font-secondary      : 'Caveat', cursive;
+}
+
+$line-height-base   : 1.5;
+$line-height-content: 1.8;
+$decoration-base    : none;
+
+$font-size-h1: 52px;
+$font-size-h2: 42px;
+$font-size-h3: 38px;
+$font-size-h4: 28px;
+$font-size-h5: 24px;
+$font-size-h6: 18px;
+
+$font-size-base: 14px;
+$baseline      : 20px;
+
+$fontawesome: "Font Awesome 5 Free";
+
+$maxSmall : "screen and (max-width:767.98px)";
+$minTablet: "screen and (min-width:768px)";
+$maxTablet: "screen and (max-width:991.98px)";
+$minLarge : "screen and (min-width:992px)";
+$maxLarge : "screen and (max-width:1199.98px)";
+$minXlarge: "screen and (min-width:1200px)";
+$noteBook: '(min-width:992px) and (max-width:1199.98px)'

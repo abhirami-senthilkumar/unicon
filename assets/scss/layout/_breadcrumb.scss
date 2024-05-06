@@ -1,0 +1,22 @@
+/*------------------------------------*\
+    #BREADCRUMB
+\*------------------------------------*/
+/* Breadcrumb Style 1 */
+.breadcrumb {
+    >li {
+        display: inline-flex;
+        align-items: center;
+        +li:before {
+
+        }
+
+        a {
+
+            &:hover {
+            }
+        }
+    }
+
+    >.active {
+    }
+}

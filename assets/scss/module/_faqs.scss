@@ -1,0 +1,52 @@
+/*------------------------------------*\
+    #FAQS
+\*------------------------------------*/
+.faqs {
+    padding-top   : 125px;
+    padding-bottom: 98px;
+
+    @media #{$maxTablet} {
+        padding-top   : 65px;
+        padding-bottom: 68px;
+    }
+
+    .more-faqs {
+        text-align: center;
+
+        p {
+            font-family  : var(--global--font-body);
+            font-weight  : 700;
+            font-size    : 14px;
+            color        : var(--global--color-body);
+            line-height  : 33px;
+            margin-bottom: 0;
+
+            a {
+                position      : relative;
+                font-weight   : 700;
+                color         : var(--global--color-heading);
+                transition    : 0.3s ease-in-out;
+                text-transform: capitalize;
+                padding-bottom: 6px;
+
+                &:hover {
+                    &::before {
+                        width: calc(100% - 20%);
+                    }
+                }
+
+                &::before {
+                    content         : '';
+                    transition      : 0.3s ease-in-out;
+                    position        : absolute;
+                    bottom          : 0;
+                    left            : 50%;
+                    transform       : translateX(-50%);
+                    width           : 100%;
+                    height          : 2px;
+                    background-color: var(--global--color-primary);
+                }
+            }
+        }
+    }
+}

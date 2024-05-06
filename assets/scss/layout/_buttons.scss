@@ -1,0 +1,406 @@
+/*------------------------------------*\
+    #BUTTONS
+\*------------------------------------*/
+
+.btn {
+    display            : flex;
+    justify-content    : center;
+    align-items        : center;
+    font-family        : var(--global--font-body);
+    position           : relative;
+    z-index            : 2;
+    font-size          : 15px;
+    font-weight        : 700;
+    text-transform     : capitalize;
+    border             : none;
+    width              : 170px;
+    height             : 50px;
+    transition      : 0.3s ease-in-out;
+    border-radius      : 4px;
+    color: var(--global--color-white);
+    padding: 0 30px;
+    &.no-shadow {
+        box-shadow: none;
+    }
+
+    &:focus,
+    &.active,
+    &:active {
+        box-shadow: none;
+        outline   : none;
+    }
+    &::before {
+        content         : '';
+        position        : absolute;
+        width           : calc(100%);
+        height          : calc(100%);
+        top             : 0px;
+        left            : 0px;
+        z-index         : -1;
+        transform       : scaleX(0);
+        transform-origin: right center;
+        transition      : transform .24s cubic-bezier(.37, .31, .31, .9);
+        border-radius   : inherit;
+    }
+
+    &:hover {
+        &::before {
+            transform       : scaleX(1);
+            transform-origin: left center;
+        }
+    }
+}
+
+
+/* Button Primary */
+.btn--primary {
+    background-color: var(--global--color-primary);
+    color           : var(--global--color-white);
+
+    &::before {
+        background-color: var(--global--color-secondary);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        border-color: var(--global--color-secondary);
+        color       : var(--global--color-white);
+    }
+
+    &.btn--inversed {
+        &::before {
+            background-color: var(--global--color-white);
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            border-color: var(--global--color-white);
+            color       : var(--global--color-heading);
+        }
+    }
+}
+
+/* Button Secondary*/
+.btn--secondary {
+    background-color: var(--global--color-secondary);
+    color           : var(--global--color-white);
+
+    &::before {
+        background-color: var(--global--color-primary);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        color       : var(--global--color-white);
+    }
+
+    &.btn--inversed {
+        &::before {
+            background-color: var(--global--color-heading-darken);
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            color       : var(--global--color-white);
+        }
+    }
+}
+.btn--secondary-dark {
+    background-color: var(--global--color-heading);
+    color           : var(--global--color-white);
+
+    &::before {
+        background-color: var(--global--color-primary);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        color       : var(--global--color-white);
+    }
+
+    &.btn--inversed {
+        &::before {
+            background-color: var(--global--color-heading-darken);
+        }
+        &:active,
+        &:focus,
+        &:hover {
+            color       : var(--global--color-white);
+            border-color: var(--global--color-heading-darken);
+        }
+    }
+}
+/* Button Secondary*/
+.btn--alternative {
+    background-color: var(--global--color-primary-alt);
+    color           : var(--global--color-white);
+
+    &::before {
+        background-color: var(--global--color-primary);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        color       : var(--global--color-white);
+    }
+
+    &.btn--inversed {
+        &::before {
+            background-color: var(--global--color-heading-darken);
+        }
+
+        &:active,
+        &:focus,
+        &:hover {
+            color       : var(--global--color-white);
+            border-color: var(--global--color-heading-darken);
+        }
+    }
+}
+
+/* Button White */
+.btn--white {
+    background-color: var(--global--color-white);
+    color           : #063464;
+    &::before {
+        background-color: var(--global--color-heading);
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        color       : var(--global--color-white);
+    }
+}
+
+/* Button Transparent */
+.btn--transparent {
+    background-color   : transparent;
+    color              : var(--global--color-white);
+    border             : 2px solid transparent;
+    &::before {
+        content: unset;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        color       : var(--global--color-white);
+    }
+
+    &.btn--primary {
+        border-color: var(--global--color-primary);
+        
+        &:active,
+        &:focus,
+        &:hover {
+            background-color: var(--global--color-primary);
+        }
+    }
+    &.btn--white {
+        border-color: var(--global--color-white);
+        &:active,
+        &:focus,
+        &:hover {
+            border-color: var(--global--color-primary);
+            background-color: var(--global--color-primary);
+        }
+    }
+}
+
+/* Buttons Custom */
+.btn--danger {
+    background-color: #dd3333;
+    color           : var(--global--color-white);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-secondary);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-secondary);
+    }
+}
+
+.btn--success {
+    background-color: #81d742;
+    color           : var(--global--color-white);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-secondary);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-secondary);
+    }
+}
+
+.btn--prime {
+    background-color: #1e73be;
+    color           : var(--global--color-white);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-secondary);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-secondary);
+    }
+}
+
+.btn--purble {
+    background-color: #8224e3;
+    color           : var(--global--color-white);
+
+    &:active,
+    &:focus,
+    &:hover {
+        background-color: var(--global--color-secondary);
+        color           : var(--global--color-white);
+        border-color    : var(--global--color-secondary);
+    }
+}
+
+/* Button Fluid */
+.btn--block {
+    width: 100%;
+}
+
+/*Button Auto */
+
+.btn--auto {
+    width  : auto;
+    padding: 0 20px;
+}
+
+/* Button Rounded */
+.btn--rounded {
+    border-radius: 50px;
+}
+
+/* Buttons Shadow */
+.btn-shadow {
+    box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+}
+
+.btn-shadow-hover {
+
+    &:hover,
+    &:active,
+    &:focus {
+        box-shadow: 0px 9px 30px 0px rgba(40, 40, 40, 0.15);
+    }
+}
+
+/* Button Bordered */
+.btn--bordered {
+    background-color   : var(--global--color-white);
+    color              : var(--global--color-white);
+    border             : 2px solid transparent;
+    &::before {
+        content: unset;
+    }
+    &.btn--primary {
+        color       : var(--global--color-primary);
+        border-color: var(--global--color-primary);
+
+        &:active,
+        &:focus,
+        &:hover {
+            color           : var(--global--color-white);
+            background-color: var(--global--color-primary);
+            border-color    : var(--global--color-primary);
+        }
+    }
+
+    &.btn--secondary {
+        color       : var(--global--color-heading);
+        border-color: #cdd6e0;
+        &:active,
+        &:focus,
+        &:hover {
+            color           : var(--global--color-white);
+            background-color: var(--global--color-secondary);
+            border-color    : var(--global--color-secondary);
+        }
+    }
+
+    &.btn--white {
+        color       : var(--global--color-white);
+        border-color: var(--global--color-white);
+
+        &:active,
+        &:focus,
+        &:hover {
+            color           : var(--global--color-primary);
+            background-color: var(--global--color-white);
+            border-color    : var(--global--color-white);
+        }
+    }
+}
+
+.btn--slide {
+    :last-of-type {
+        margin-left: -6px;
+    }
+}
+
+.btn--slide-wide {
+    width: 270px;
+
+    @media screen and (max-width: 360px) {
+        width: 240px;
+    }
+}
+
+.btn-video {
+    @include centerd(150px, 150px, url('../images/video/bg.png') no-repeat );
+    border-radius   : 50%;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        transform: scale(0.8);
+    }
+    .icon {
+        @include centerd(76px, 76px, var(--global--color-white));
+        border-radius: 50%;
+        position: relative;
+        z-index: 2;
+        svg {
+            color: rgb(6, 52, 100);
+            transition: 0.3s ease-in-out;
+        }
+    }
+}
+
+.btn-transparent {
+    color           : var(--global--color-primary);
+    border-color    : var(--global--color-primary);
+    background-color: transparent;
+
+    &:active,
+    &:focus,
+    &:hover {
+        color           : var(--global--color-white);
+        background-color: var(--global--color-secondary);
+        border-color    : var(--global--color-secondary)
+    }
+}
+
+/* Buttons Sizes */
+.btn-small {
+    width      : 170px;
+    height     : 41px;
+    line-height: 41px;
+}
+
+.btn-super {
+    width      : 170px;
+    height     : 61px;
+    line-height: 61px;
+}

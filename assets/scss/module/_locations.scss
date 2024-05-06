@@ -1,0 +1,80 @@
+/*------------------------------------*\
+    #LOCATIONS
+\*------------------------------------*/
+.global-locations {
+    padding-top   : 105px;
+    padding-bottom: 30px;
+
+    @media #{$maxTablet} {
+        padding-top   : 65px;
+        padding-bottom: 16px;
+    }
+
+    .continent {
+        margin-bottom: 70px;
+
+        @media #{$maxTablet} {
+            margin-bottom: 40px;
+        }
+
+        .continent-name {
+            margin-bottom : 27px;
+            border-bottom : 2px solid #e6eaef;
+            padding-bottom: 23px;
+
+            @media #{$maxTablet} {
+                text-align: center;
+            }
+
+            h2 {
+                font-family   : var(--global--font-heading);
+                font-weight   : 500;
+                font-size     : 25px;
+                line-height   : 30px;
+                text-transform: capitalize;
+                color         : #1e4873;
+                margin-bottom : 0;
+            }
+        }
+
+        .continent-offices {
+            margin-bottom: 0;
+
+            @media #{$maxTablet} {
+                text-align: center;
+            }
+
+            ul {
+                margin: 0;
+            }
+
+            li {
+                a {
+                    font-family   : var(--global--font-body);
+                    font-size     : 14px;
+                    line-height   : 40px;
+                    font-weight   : 700;
+                    color         : var(--global--color-heading);
+                    transition    : 0.3s ease-in-out;
+                    text-transform: capitalize;
+                    display       : flex;
+                    align-items   : center;
+
+                    &:hover {
+                        color: var(--global--color-primary-alt);
+
+                        i {
+                            color: var(--global--color-primary-alt);
+                        }
+                    }
+
+                    i {
+                        margin-right: 15px;
+                        transition  : 0.3s ease-in-out;
+                        color       : var(--global--color-heading);
+                    }
+                }
+            }
+        }
+    }
+}

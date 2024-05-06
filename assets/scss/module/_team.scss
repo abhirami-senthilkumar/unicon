@@ -1,0 +1,193 @@
+/*------------------------------------*\
+    #Team
+\*------------------------------------*/
+.team {
+    padding-top   : 110px;
+    padding-bottom: 30px;
+
+    @media #{$maxTablet} {
+        padding-top   : 70px;
+        padding-bottom: 30px;
+    }
+
+    .carousel {
+        .owl-stage-outer {
+            overflow: visible;
+
+            .owl-item {
+                opacity: 0;
+
+                &.active {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .member {
+        transition   : all 300ms linear 0ms;
+        max-width    : 370px;
+        margin       : 0 auto 70px;
+        box-shadow   : 0px 5px 83px 0px rgba(3, 43, 86, 0.12);
+        border-radius: 4px;
+
+        @media #{$maxTablet} {
+            margin: 0 auto 40px;
+        }
+
+        &:hover {
+            .member-content {
+                .member-social {
+                    opacity   : 1;
+                    visibility: visible;
+                }
+            }
+        }
+
+        .member-img {
+            position: relative;
+
+            img {
+                border-radius: 8px;
+                max-width    : 100%;
+            }
+
+        }
+
+        .member-content {
+            background-color: var(--global--color-white);
+            padding         : 32px 40px 36px;
+            display         : flex;
+            align-items     : center;
+            justify-content : space-between;
+            position        : relative;
+            border-radius   : 0 0 4px 4px;
+
+            @media #{$noteBook} {
+                padding-left : 30px;
+                padding-right: 30px;
+            }
+
+            @media #{$maxSmall} {
+                flex-direction: column;
+                text-align    : center;
+            }
+
+            .member-social {
+                display    : flex;
+                align-items: center;
+                transition : 0.3s ease-in-out;
+                opacity    : 0;
+                visibility : hidden;
+
+                a {
+                    border-radius   : 50%;
+                    display         : flex;
+                    align-items     : center;
+                    justify-content : center;
+                    background-color: var(--global--color-primary-alt);
+                    width           : 20px;
+                    height          : 20px;
+                    color           : var(--global--color-white);
+                    font-size       : 11px;
+                    transition      : 0.3s ease-in-out;
+                    margin-right    : 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+                        transform: translateY(-5px);
+                    }
+                }
+            }
+
+            .member-info {
+                @media #{$maxSmall} {
+                    margin-bottom: 25px;
+                }
+
+                a {
+                    display       : inline-block;
+                    font-family   : var(--global--font-heading);
+                    font-size     : 20px;
+                    font-weight   : 500;
+                    color         : #1e4873;
+                    margin-bottom : 11px;
+                    text-transform: capitalize;
+                    transition    : 0.3s ease-in-out;
+
+                    &:hover {
+                        color: var(--global--color-primary-alt);
+                    }
+                }
+
+                p {
+                    font-family   : var(--global--font-body);
+                    color         : var(--global--color-body);
+                    font-size     : 15px;
+                    font-weight   : 400;
+                    line-height   : 1;
+                    text-transform: capitalize;
+                    transition    : 0.3s ease-in-out;
+                    margin-bottom : 0;
+                }
+            }
+        }
+
+        &.member-2 {
+            border-radius: 4px;
+            overflow     : hidden;
+            box-shadow   : none;
+
+            &:hover {
+                box-shadow: 0px 5px 83px 0px rgba(3, 43, 86, 0.12);
+
+                .member-content {
+                    .member-social {
+                        //transform: scaleY(1);
+                        opacity   : 1;
+                        visibility: visible;
+                    }
+                }
+            }
+
+            .member-content {
+                justify-content: center;
+                padding-top    : 22px;
+                padding-bottom : 26px;
+
+                @media #{$noteBook} {
+                    padding-left : 25px;
+                    padding-right: 25px;
+                }
+
+                .member-social {
+                    position        : absolute;
+                    top             : -40px;
+                    left            : 0;
+                    right           : 0;
+                    width           : 100%;
+                    height          : calc(100% + 40px);
+                    padding-top     : 30px;
+                    justify-content : center;
+                    align-items     : flex-start;
+                    background-color: var(--global--color-white);
+                    z-index         : 1;
+                    transform-origin: bottom;
+                    //transform: scaleY(0);
+                    visibility      : hidden;
+                    opacity         : 0;
+                    border-radius   : 4px;
+                }
+
+                .member-info {
+                    text-align: center;
+                    position  : relative;
+                    z-index   : 2;
+                }
+            }
+        }
+    }
+}

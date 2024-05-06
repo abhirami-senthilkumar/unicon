@@ -1,0 +1,87 @@
+/*------------------------------------*\
+    #Call To Action
+\*------------------------------------*/
+.cta {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+
+    .cta-wrapper {
+        display    : flex;
+        align-items: center;
+
+        @media #{$maxTablet} {
+            flex-direction : column;
+            justify-content: center;
+        }
+
+        .cta-body {
+            display    : flex;
+            align-items: center;
+
+            @media #{$maxTablet} {
+                margin-bottom: 40px;
+            }
+
+            @media #{$maxSmall} {
+                flex-direction: column;
+                text-align    : center;
+            }
+
+            .cta-icon {
+                flex-shrink : 0;
+                margin-right: 60px;
+
+                @media #{$noteBook} {
+                    margin-right: 30px;
+                }
+
+                @media #{$maxSmall} {
+                    margin-right : 0;
+                    margin-bottom: 40px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            .cta-content {
+                flex-grow: 1;
+
+                h2 {
+                    @include text(var(--global--font-heading), 24px, 1.4, 700, #05213f, 15px);
+                }
+
+                p {
+                    @include text(var(--global--font-body), 16px, 27px, 400, var(--global--color-body), 0px);
+                }
+            }
+        }
+
+        .cta-action {
+            flex-basis     : 30%;
+            flex-shrink    : 0;
+            display        : flex;
+            justify-content: flex-end;
+
+            @media #{$noteBook} {
+                flex-basis : 20%;
+                margin-left: 20px;
+            }
+
+            .btn {
+                width          : 290px;
+                height         : 70px;
+                justify-content: space-between;
+
+                @media #{$noteBook} {
+                    width: 220px;
+                }
+
+                i {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,704 @@
+@font-face {
+  font-family: 'dental';
+  src:  url('../fonts/dental.eot?foktzu');
+  src:  url('../fonts/dental.eot?foktzu#iefix') format('embedded-opentype'),
+    url('../fonts/dental.ttf?foktzu') format('truetype'),
+    url('../fonts/dental.woff?foktzu') format('woff'),
+    url('../fonts/dental.svg?foktzu#dental') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="dental-"], [class*=" dental-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'dental' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dental-plaque .path1:before {
+  content: "\e9000";
+  color: rgb(36, 211, 181);
+}
+.dental-plaque .path2:before {
+  content: "\e9001";
+  margin-left: -1em;
+  color: rgb(32, 183, 161);
+}
+.dental-plaque .path3:before {
+  content: "\e9002";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-plaque .path4:before {
+  content: "\e9003";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-plaque .path5:before {
+  content: "\e9004";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-plaque .path6:before {
+  content: "\e9005";
+  margin-left: -1em;
+  color: rgb(242, 187, 136);
+}
+.dental-plaque .path7:before {
+  content: "\e9006";
+  margin-left: -1em;
+  color: rgb(227, 167, 111);
+}
+.dental-plaque .path8:before {
+  content: "\e9007";
+  margin-left: -1em;
+  color: rgb(242, 209, 165);
+}
+.dental-plaque .path9:before {
+  content: "\e9008";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-plaque .path10:before {
+  content: "\e9009";
+  margin-left: -1em;
+  color: rgb(35, 46, 122);
+}
+.dental-plaque .path11:before {
+  content: "\e900a";
+  margin-left: -1em;
+  color: rgb(25, 154, 142);
+}
+.dental-plaque .path12:before {
+  content: "\e900b";
+  margin-left: -1em;
+  color: rgb(51, 66, 174);
+}
+.dental-plaque .path13:before {
+  content: "\e900c";
+  margin-left: -1em;
+  color: rgb(43, 56, 148);
+}
+.dental-teeth-cleaning .path1:before {
+  content: "\e90d0";
+  color: rgb(61, 78, 198);
+}
+.dental-teeth-cleaning .path2:before {
+  content: "\e90d1";
+  margin-left: -1em;
+  color: rgb(113, 126, 214);
+}
+.dental-teeth-cleaning .path3:before {
+  content: "\e90d2";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-teeth-cleaning .path4:before {
+  content: "\e90d3";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-teeth-cleaning .path5:before {
+  content: "\e90d4";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-teeth-cleaning .path6:before {
+  content: "\e90d5";
+  margin-left: -1em;
+  color: rgb(242, 187, 136);
+}
+.dental-teeth-cleaning .path7:before {
+  content: "\e90d6";
+  margin-left: -1em;
+  color: rgb(227, 167, 111);
+}
+.dental-teeth-cleaning .path8:before {
+  content: "\e90d7";
+  margin-left: -1em;
+  color: rgb(242, 209, 165);
+}
+.dental-teeth-cleaning .path9:before {
+  content: "\e90d8";
+  margin-left: -1em;
+  color: rgb(88, 170, 203);
+}
+.dental-teeth-cleaning .path10:before {
+  content: "\e90d9";
+  margin-left: -1em;
+  color: rgb(166, 210, 227);
+}
+.dental-teeth-cleaning .path11:before {
+  content: "\e90da";
+  margin-left: -1em;
+  color: rgb(127, 190, 215);
+}
+.dental-teeth-cleaning .path12:before {
+  content: "\e90db";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-teeth-cleaning .path13:before {
+  content: "\e90dc";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-teeth-cleaning .path14:before {
+  content: "\e90dd";
+  margin-left: -1em;
+  color: rgb(192, 223, 235);
+}
+.dental-teeth-cleaning .path15:before {
+  content: "\e90de";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-teeth-cleaning .path16:before {
+  content: "\e90df";
+  margin-left: -1em;
+  color: rgb(166, 210, 227);
+}
+.dental-teeth-cleaning .path17:before {
+  content: "\e90e0";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-teeth-cleaning .path18:before {
+  content: "\e90e1";
+  margin-left: -1em;
+  color: rgb(62, 157, 195);
+}
+.dental-teeth-cleaning .path19:before {
+  content: "\e90e2";
+  margin-left: -1em;
+  color: rgb(166, 210, 227);
+}
+.dental-teeth-cleaning .path20:before {
+  content: "\e90e3";
+  margin-left: -1em;
+  color: rgb(192, 223, 235);
+}
+.dental-teeth-cleaning .path21:before {
+  content: "\e90e4";
+  margin-left: -1em;
+  color: rgb(140, 197, 219);
+}
+.dental-implant .path1:before {
+  content: "\e9220";
+  color: rgb(51, 66, 174);
+}
+.dental-implant .path2:before {
+  content: "\e9221";
+  margin-left: -1em;
+  color: rgb(87, 102, 206);
+}
+.dental-implant .path3:before {
+  content: "\e9222";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-implant .path4:before {
+  content: "\e9223";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-implant .path5:before {
+  content: "\e9224";
+  margin-left: -1em;
+  color: rgb(160, 160, 165);
+}
+.dental-implant .path6:before {
+  content: "\e9225";
+  margin-left: -1em;
+  color: rgb(185, 185, 190);
+}
+.dental-implant .path7:before {
+  content: "\e9226";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-implant .path8:before {
+  content: "\e9227";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-implant .path9:before {
+  content: "\e9228";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-implant .path10:before {
+  content: "\e9229";
+  margin-left: -1em;
+  color: rgb(242, 187, 136);
+}
+.dental-implant .path11:before {
+  content: "\e922a";
+  margin-left: -1em;
+  color: rgb(227, 167, 111);
+}
+.dental-implant .path12:before {
+  content: "\e922b";
+  margin-left: -1em;
+  color: rgb(242, 209, 165);
+}
+.dental-implant .path13:before {
+  content: "\e922c";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-implant .path14:before {
+  content: "\e922d";
+  margin-left: -1em;
+  color: rgb(185, 211, 253);
+}
+.dental-dentist .path1:before {
+  content: "\e9300";
+  color: rgb(36, 211, 181);
+}
+.dental-dentist .path2:before {
+  content: "\e9301";
+  margin-left: -1em;
+  color: rgb(32, 183, 161);
+}
+.dental-dentist .path3:before {
+  content: "\e9302";
+  margin-left: -1em;
+  color: rgb(51, 66, 174);
+}
+.dental-dentist .path4:before {
+  content: "\e9303";
+  margin-left: -1em;
+  color: rgb(43, 56, 148);
+}
+.dental-dentist .path5:before {
+  content: "\e9304";
+  margin-left: -1em;
+  color: rgb(166, 210, 227);
+}
+.dental-dentist .path6:before {
+  content: "\e9305";
+  margin-left: -1em;
+  color: rgb(192, 223, 235);
+}
+.dental-dentist .path7:before {
+  content: "\e9306";
+  margin-left: -1em;
+  color: rgb(166, 210, 227);
+}
+.dental-dentist .path8:before {
+  content: "\e9307";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-dentist .path9:before {
+  content: "\e9308";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-dentist .path10:before {
+  content: "\e9309";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-dentist .path11:before {
+  content: "\e930a";
+  margin-left: -1em;
+  color: rgb(245, 240, 235);
+}
+.dental-dentist .path12:before {
+  content: "\e930b";
+  margin-left: -1em;
+  color: rgb(242, 187, 136);
+}
+.dental-dentist .path13:before {
+  content: "\e930c";
+  margin-left: -1em;
+  color: rgb(227, 167, 111);
+}
+.dental-dentist .path14:before {
+  content: "\e930d";
+  margin-left: -1em;
+  color: rgb(242, 187, 136);
+}
+.dental-dentist .path15:before {
+  content: "\e930e";
+  margin-left: -1em;
+  color: rgb(140, 197, 219);
+}
+.dental-dentist .path16:before {
+  content: "\e930f";
+  margin-left: -1em;
+  color: rgb(88, 170, 203);
+}
+.dental-dentist .path17:before {
+  content: "\e9310";
+  margin-left: -1em;
+  color: rgb(35, 46, 122);
+}
+.dental-dentist .path18:before {
+  content: "\e9311";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-dentist .path19:before {
+  content: "\e9312";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-dentist .path20:before {
+  content: "\e9313";
+  margin-left: -1em;
+  color: rgb(220, 210, 205);
+}
+.dental-dentist .path21:before {
+  content: "\e9314";
+  margin-left: -1em;
+  color: rgb(43, 56, 148);
+}
+.dental-dentist .path22:before {
+  content: "\e9315";
+  margin-left: -1em;
+  color: rgb(51, 66, 174);
+}
+.dental-dentist .path23:before {
+  content: "\e9316";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-dentist .path24:before {
+  content: "\e9317";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-dentist .path25:before {
+  content: "\e9318";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-dentist .path26:before {
+  content: "\e9319";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-dentist .path27:before {
+  content: "\e931a";
+  margin-left: -1em;
+  color: rgb(227, 167, 111);
+}
+.dental-dentist .path28:before {
+  content: "\e931b";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-dentist .path29:before {
+  content: "\e931c";
+  margin-left: -1em;
+  color: rgb(166, 210, 227);
+}
+.dental-dentist .path30:before {
+  content: "\e931d";
+  margin-left: -1em;
+  color: rgb(51, 66, 174);
+}
+.dental-dentist .path31:before {
+  content: "\e931e";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-dentist .path32:before {
+  content: "\e931f";
+  margin-left: -1em;
+  color: rgb(242, 187, 136);
+}
+.dental-dentist .path33:before {
+  content: "\e9320";
+  margin-left: -1em;
+  color: rgb(227, 167, 111);
+}
+.dental-dentist1 .path1:before {
+  content: "\e9510";
+  color: rgb(36, 211, 181);
+}
+.dental-dentist1 .path2:before {
+  content: "\e9511";
+  margin-left: -1em;
+  color: rgb(32, 183, 161);
+}
+.dental-dentist1 .path3:before {
+  content: "\e9512";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-dentist1 .path4:before {
+  content: "\e9513";
+  margin-left: -1em;
+  color: rgb(185, 185, 190);
+}
+.dental-dentist1 .path5:before {
+  content: "\e9514";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-dentist1 .path6:before {
+  content: "\e9515";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-dentist1 .path7:before {
+  content: "\e9516";
+  margin-left: -1em;
+  color: rgb(185, 185, 190);
+}
+.dental-dentist1 .path8:before {
+  content: "\e9517";
+  margin-left: -1em;
+  color: rgb(188, 21, 125);
+}
+.dental-dentist1 .path9:before {
+  content: "\e9518";
+  margin-left: -1em;
+  color: rgb(255, 46, 166);
+}
+.dental-dentist1 .path10:before {
+  content: "\e9519";
+  margin-left: -1em;
+  color: rgb(209, 40, 152);
+}
+.dental-dentist1 .path11:before {
+  content: "\e951a";
+  margin-left: -1em;
+  color: rgb(255, 114, 195);
+}
+.dental-dentist1 .path12:before {
+  content: "\e951b";
+  margin-left: -1em;
+  color: rgb(255, 174, 224);
+}
+.dental-dentist1 .path13:before {
+  content: "\e951c";
+  margin-left: -1em;
+  color: rgb(209, 40, 152);
+}
+.dental-dentist1 .path14:before {
+  content: "\e951d";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-dentist1 .path15:before {
+  content: "\e951e";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-dentist1 .path16:before {
+  content: "\e951f";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-dental .path1:before {
+  content: "\e9610";
+  color: rgb(113, 126, 214);
+}
+.dental-dental .path2:before {
+  content: "\e9611";
+  margin-left: -1em;
+  color: rgb(61, 78, 198);
+}
+.dental-dental .path3:before {
+  content: "\e9612";
+  margin-left: -1em;
+  color: rgb(185, 185, 190);
+}
+.dental-dental .path4:before {
+  content: "\e9613";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-dental .path5:before {
+  content: "\e9614";
+  margin-left: -1em;
+  color: rgb(43, 56, 148);
+}
+.dental-dental .path6:before {
+  content: "\e9615";
+  margin-left: -1em;
+  color: rgb(51, 66, 174);
+}
+.dental-dental .path7:before {
+  content: "\e9616";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-dental .path8:before {
+  content: "\e9617";
+  margin-left: -1em;
+  color: rgb(51, 66, 174);
+}
+.dental-dental .path9:before {
+  content: "\e9618";
+  margin-left: -1em;
+  color: rgb(173, 235, 220);
+}
+.dental-dental .path10:before {
+  content: "\e9619";
+  margin-left: -1em;
+  color: rgb(32, 183, 161);
+}
+.dental-dental .path11:before {
+  content: "\e961a";
+  margin-left: -1em;
+  color: rgb(25, 154, 142);
+}
+.dental-dental .path12:before {
+  content: "\e961b";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-dental .path13:before {
+  content: "\e961c";
+  margin-left: -1em;
+  color: rgb(185, 185, 190);
+}
+.dental-dental .path14:before {
+  content: "\e961d";
+  margin-left: -1em;
+  color: rgb(255, 46, 166);
+}
+.dental-dental .path15:before {
+  content: "\e961e";
+  margin-left: -1em;
+  color: rgb(255, 80, 181);
+}
+.dental-x-rays .path1:before {
+  content: "\e9700";
+  color: rgb(255, 80, 181);
+}
+.dental-x-rays .path2:before {
+  content: "\e9701";
+  margin-left: -1em;
+  color: rgb(140, 150, 221);
+}
+.dental-x-rays .path3:before {
+  content: "\e9702";
+  margin-left: -1em;
+  color: rgb(166, 174, 229);
+}
+.dental-x-rays .path4:before {
+  content: "\e9703";
+  margin-left: -1em;
+  color: rgb(43, 56, 148);
+}
+.dental-x-rays .path5:before {
+  content: "\e9704";
+  margin-left: -1em;
+  color: rgb(87, 102, 206);
+}
+.dental-x-rays .path6:before {
+  content: "\e9705";
+  margin-left: -1em;
+  color: rgb(140, 150, 221);
+}
+.dental-x-rays .path7:before {
+  content: "\e9706";
+  margin-left: -1em;
+  color: rgb(36, 211, 181);
+}
+.dental-x-rays .path8:before {
+  content: "\e9707";
+  margin-left: -1em;
+  color: rgb(32, 183, 161);
+}
+.dental-x-rays .path9:before {
+  content: "\e9708";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-x-rays .path10:before {
+  content: "\e9709";
+  margin-left: -1em;
+  color: rgb(236, 236, 241);
+}
+.dental-x-rays .path11:before {
+  content: "\e970a";
+  margin-left: -1em;
+  color: rgb(211, 211, 216);
+}
+.dental-x-rays .path12:before {
+  content: "\e970b";
+  margin-left: -1em;
+  color: rgb(255, 46, 166);
+}
+.dental-x-rays .path13:before {
+  content: "\e970c";
+  margin-left: -1em;
+  color: rgb(255, 80, 181);
+}
+.dental-24-hours .path1:before {
+  content: "\e97d0";
+  color: rgb(61, 78, 198);
+}
+.dental-24-hours .path2:before {
+  content: "\e97d1";
+  margin-left: -1em;
+  color: rgb(140, 197, 219);
+}
+.dental-24-hours .path3:before {
+  content: "\e97d2";
+  margin-left: -1em;
+  color: rgb(192, 223, 235);
+}
+.dental-24-hours .path4:before {
+  content: "\e97d3";
+  margin-left: -1em;
+  color: rgb(127, 190, 215);
+}
+.dental-24-hours .path5:before {
+  content: "\e97d4";
+  margin-left: -1em;
+  color: rgb(88, 170, 203);
+}
+.dental-24-hours .path6:before {
+  content: "\e97d5";
+  margin-left: -1em;
+  color: rgb(245, 240, 235);
+}
+.dental-24-hours .path7:before {
+  content: "\e97d6";
+  margin-left: -1em;
+  color: rgb(220, 210, 205);
+}
+.dental-24-hours .path8:before {
+  content: "\e97d7";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
+.dental-24-hours .path9:before {
+  content: "\e97d8";
+  margin-left: -1em;
+  color: rgb(255, 80, 181);
+}
+.dental-24-hours .path10:before {
+  content: "\e97d9";
+  margin-left: -1em;
+  color: rgb(255, 46, 166);
+}
+.dental-24-hours .path11:before {
+  content: "\e97da";
+  margin-left: -1em;
+  color: rgb(255, 174, 224);
+}
+.dental-24-hours .path12:before {
+  content: "\e97db";
+  margin-left: -1em;
+  color: rgb(255, 245, 245);
+}
